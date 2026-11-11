@@ -1,0 +1,11 @@
+APIKEY.txt
+API_KEYS.txt
+.env
+data/
+datasets/
+logs/
+*.db
+*.parquet
+*.sif
+__pycache__/
+.venv/

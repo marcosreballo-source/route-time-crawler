@@ -1,0 +1,24 @@
+Bootstrap: docker
+From: python:3.11-slim
+
+%post
+    # Install system deps if needed, then install requirements
+    pip install --no-cache-dir \
+        requests==2.31.0 \
+        pandas==2.2.2 \
+        pyarrow==16.1.0 \
+        folium==0.16.0 \
+        plotly==5.22.0 \
+        networkx==3.3 \
+        geopy==2.4.1 \
+        pytz==2024.1 \
+        numpy==1.26.4 \
+        matplotlib==3.8.4 \
+        seaborn==0.13.2
+
+%environment
+    export TZ=America/Sao_Paulo
+    export PYTHONUNBUFFERED=1
+
+%runscript
+    exec python "$@"

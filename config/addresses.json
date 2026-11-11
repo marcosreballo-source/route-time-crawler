@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hub",
+    "name": "Hub fictício (Av. Rebouças)",
+    "type": "hub",
+    "address": "Avenida Rebouças - Pinheiros, São Paulo - SP",
+    "lat": -23.568,
+    "lng": -46.6852
+  },
+  {
+    "id": "paulista",
+    "name": "Ponto Paulista",
+    "type": "store",
+    "address": "Avenida Paulista, 1578 - Bela Vista, São Paulo - SP",
+    "lat": -23.5614,
+    "lng": -46.6559
+  },
+  {
+    "id": "ibirapuera",
+    "name": "Ponto Ibirapuera",
+    "type": "store",
+    "address": "Parque Ibirapuera - Vila Mariana, São Paulo - SP",
+    "lat": -23.5874,
+    "lng": -46.6576
+  },
+  {
+    "id": "centro",
+    "name": "Ponto Centro",
+    "type": "store",
+    "address": "Rua da Cantareira, 306 - Centro, São Paulo - SP",
+    "lat": -23.5417,
+    "lng": -46.6297
+  }
+]
