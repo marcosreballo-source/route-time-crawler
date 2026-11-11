@@ -16,6 +16,22 @@ O tempo de trajeto entre dois pontos varia muito com o dia da semana, o horário
 
 *Execuções do crawler entre 20/06 e 01/07/2026. Na primeira fase, a coleta é espaçada a cada 3 h. Na segunda, ela se concentra nos picos da manhã e da noite.*
 
+## Resultados da coleta real (nomes censurados)
+
+O crawler rodou de **17/06 a 04/07/2026** sobre a rede real de um varejista na Grande São Paulo: 1 hub e 14 lojas, ou seja, **210 pares origem-destino**. Foram **360 snapshots** e **75.600 medições**. Por confidencialidade, o nome da empresa e das lojas está **tarjado (██████)** nos gráficos, e os dados brutos não fazem parte deste repositório.
+
+![Tempo de trajeto por hora](docs/perfil_horario.png)
+
+Em dias úteis, a mediana de tempo de trajeto **dobra** entre os horários mais livres e o pico da tarde (≈ 21 → 44 min), e a dispersão cresce ainda mais. No fim de semana, a curva fica bem mais plana. Uma única medição por par, portanto, erra feio o custo real da rota dependendo do horário.
+
+![Variação temporal de uma rota](docs/heatmap_rota.png)
+
+Para a rota mais sensível ao trânsito, a mesma viagem vai de ~30 min nos horários livres a ~100 min numa quarta às 17h. Células vazias são horários em que não houve coleta naquele dia da semana.
+
+![Matriz origem-destino no pico](docs/matriz_od_pico.png)
+
+![Volume coletado por dia](docs/volume_coletado.png)
+
 ## Arquitetura
 
 ```mermaid
