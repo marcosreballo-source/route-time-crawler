@@ -67,5 +67,5 @@ No cluster: `apptainer build collector.sif cluster/collector.def` e depois `bash
 
 ## Projetos relacionados
 
-- [delivery-graph-builder](https://github.com/marcosreballo-source/delivery-graph-builder): gera o grafo de entregas sobre a malha viária (OSRM) e resolve as rotas com OR-Tools. Foi a base das instâncias da frente de QAOA multiobjetivo ([arXiv:2610.00168](https://arxiv.org/abs/2610.00168)).
+- [delivery-graph-builder](https://github.com/marcosreballo-source/delivery-graph-builder): transforma a malha de ruas do OpenStreetMap em grafo, encaixa as entregas e resolve as rotas com OR-Tools. Foi a base das instâncias da frente de QAOA multiobjetivo ([arXiv:2610.00168](https://arxiv.org/abs/2610.00168)).
 - O dataset temporal deste crawler alimentaria os modelos de roteamento com GNN do QGAT ([arXiv:2609.00489](https://arxiv.org/abs/2609.00489)). O código dos dois papers está em [quantum-routing-research](https://github.com/marcosreballo-source/quantum-routing-research).
